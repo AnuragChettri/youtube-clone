@@ -1,0 +1,233 @@
+
+body {
+    padding-top: 60px;
+    padding-left: 90px;
+    background-color: rgb(242, 242, 242);
+}
+
+
+.header {
+    display:flex;
+    flex-direction: row;
+    height: 55px;
+    margin-bottom: 15px;
+    justify-content: space-between;
+    padding-right: 28px;
+    padding-left: 20px;
+    position: fixed;
+    z-index: 100;
+    /* div having maximum z index value will overlap the div having less z index value */
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    background-color: white;
+    border: 1px solid rgb(179, 178, 178);
+    /* border: width style color */
+}
+
+.left-section {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 20px;
+}
+.option-button {
+    width:25px;
+    margin-right: 25px;
+}
+.youtube-logo {
+    width: 90px;
+}
+
+.middle-section {
+    display:flex;
+    flex-direction : row;
+    align-items: center;
+    flex: 1;
+    max-width: 500px;
+}
+.search-place {
+    flex: 1;
+    border: 1px solid rgb(179, 178, 178);
+    /* border: width style color */
+    height:30px;
+    border-radius: 2px;
+    width: 0; 
+}
+
+.button-search {
+    border: 1px solid rgb(179, 178, 178);
+    /* border: width style color */
+    margin-left: -1px;
+    background-color: rgb(235, 233, 233);
+    height: 34px;
+    padding-left:15px;
+    padding-right: 15px;
+    border-radius: 2px;
+}
+
+.search{
+    width: 20px;
+}
+
+.button-voice-search {
+    border-width:1px;
+    border:none;
+    background-color: rgb(244, 244, 244);
+    padding: 4px 6px 4px 6px;
+    /* padding: top right bottom left */
+    border-radius: 14px;
+    margin-left: 10px;
+}
+.voice-search {
+    width: 20px;
+
+}
+
+.right-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 85px;
+    justify-content: space-between;
+    padding-right: 15px;
+    flex-shrink: 0;
+    margin-left:10px; 
+    /* it will prevent the shrinking of flex */
+}
+.button-notification {
+    margin-right: 20px;
+    width: 25px;
+}
+.notification-bell {
+    position: relative;
+}
+.notification-no {
+    position: absolute;
+    background-color: rgb(203, 9, 9);
+    color: white;
+    padding: 2px 6px 2px 6px;
+    /* padding: top right bottom left */
+    font-family: sans-serif;
+    border-radius: 20px;
+    top: -4px;
+    right: 10px;
+}
+
+.my-channel {
+    width: 34px;
+}
+
+
+.sidebar {
+    background-color: white;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    top: 55px;
+    width: 72px;
+    z-index: 200;
+}
+
+.sidebar-icons{
+    height: 76px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sidebar-icons:hover{
+    background-color: rgb(233, 233, 233);
+}
+.sidebar img {
+    width: 25px;
+}
+
+.sidebar-title {
+    font-size: 10px;
+    font-family: sans-serif;
+    color: black;
+    font-weight: 500;
+}
+.body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom:500px;
+    column-gap: 20px;
+    row-gap: 40px;
+    /* padding-left: 30px; */
+    padding-right:30px;
+}
+
+@media (max-width: 780px)
+{
+    .body {
+        display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom:500px;
+    column-gap: 20px;
+    row-gap: 40px;
+    /* padding-left: 30px; */
+    padding-right:30px;
+    }
+}
+
+.thumbnail{
+    width: 100%;
+}
+
+.video-thumbnail {
+    position: relative;
+}
+
+.video-time {
+    position: absolute;
+    background-color: black;
+    color: white;
+    bottom: 14px;
+    right: 5px;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 500px;
+    padding: 4px;
+    /* padding: top right bottom left */
+    border-radius: 3px;
+}
+
+
+.video-info {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    column-gap: 5px;
+}
+.profile-pic {
+    width: 40px;
+    border-radius: 20px;
+    margin-top: 8px;
+    margin-left: 2px;
+}
+p {
+    margin-top:0px;
+    margin-bottom: 0px;
+}
+.video-title {
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 16px;
+    color:rgb(61, 60, 60);
+    margin-bottom: 10px;
+    margin-top:8px;
+}
+.video-author {
+    font-family: Arial;
+    font-weight: 400;
+    font-size: 14px;
+    color:rgb(92, 88, 88);
+    margin-bottom: 6px;
+}
+.video-views {
+    font-family: Arial;
+    font-size: 12px;
+    color:rgb(83, 81, 81);
+    
+}
